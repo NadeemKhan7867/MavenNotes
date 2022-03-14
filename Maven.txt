@@ -1,0 +1,50 @@
+1)What is Maven
+Ans: Maven is a popular open-source build tool developed by the Apache Group to build, publish, and deploy several projects
+at once for better project management. The tool provides allows developers to build and document the lifecycle framework.
+
+2)Why Maven
+
+Ans: * Maven provides the common interface for the developers
+     * Maven take care of the dependency management
+     * Maven has it's repository where it puts all the artifacts and it's plugins and it will download them on fly so if
+       a project needs a perticular dependency in the open source those dependency will be pulled from this repository
+
+3)Maven Commands
+Ans:
+    command Meaning
+   
+    1)mvn version 			1)Prints out the version of MAven running
+    2)mvn clean 				2)Cleans the target directory into which maven
+							build projects
+    3)mvn install  			3)Builds the project described by our maven pom
+							fileand install jar into our local repository
+    4)mvn clean install 		4)Clears the target directory and builds the project
+						described by your Maven POM file and installs the
+						resulting artifact (JAR) into your local Maven
+						repository
+
+4)Maven Life Cycle
+Ans:
+There are 5 phases namely,
+validate
+Test
+Package
+Verify
+Install
+Deploy
+
+Validate: This step validates if the project structure is correct. For example – It checks if all the dependencies have been downloaded and are available in the local repository.
+
+Compile: It compiles the source code, converts the .java files to .class and stores the classes in target/classes folder.
+
+Test: It runs unit tests for the project.
+
+Package: This step packages the compiled code in distributable format like JAR or WAR.
+
+Integration test: It runs the integration tests for the project.
+
+Verify: This step runs checks to verify that the project is valid and meets the quality standards.
+
+Install: This step installs the packaged code to the local Maven repository.
+
+Deploy: It copies the packaged code to the remote repository for sharing it with other developers.
